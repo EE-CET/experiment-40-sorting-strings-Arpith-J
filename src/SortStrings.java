@@ -9,5 +9,15 @@ public class SortStrings {
         // TODO: Read N strings into an array
         // TODO: Sort the array (Arrays.sort uses lexicographical order by default)
         // TODO: Print the sorted strings, one per line
+        int n = sc.nextInt();
+        sc.nextLine();
+        String[] arr = new String[n];
+        for(int i=0; i<n; i++){
+            arr[i] = sc.nextLine();
+        }
+        Arrays.sort(arr);
+        for(int i=0; i<n; i++){
+            System.out.println(arr[i]);
+        }
     }
 }
